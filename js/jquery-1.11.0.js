@@ -4621,7 +4621,7 @@ jQuery.event = {
 					event.data = handleObj.data;
 
 					ret = ( (jQuery.event.special[ handleObj.origType ] || {}).handle || handleObj.handler )
-							.apply( matched.elem, args );
+							.apply( matched.elem,args );
 
 					if ( ret !== undefined ) {
 						if ( (event.result = ret) === false ) {
